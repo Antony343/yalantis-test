@@ -1,12 +1,11 @@
 import classes from './Layout.module.css'
 import { Route } from 'react-router-dom';
-import EmployeesInterfaceContainer from '../EmployeesInterface/EmployeesInterfaceContainer';
+import EmployeesInterfaceContainer from '../../containers/EmployeesInterfaceContainer';
 
-
-const Layout = (props) => {
+const Layout = () => {
   return (
     <div className={classes.layoutContainer}>
-      <Route path='/employee' render={() => <EmployeesInterfaceContainer />} />
+      <Route path='/employees' render={() => <EmployeesInterfaceContainer />} />
     </div>
   )
 }

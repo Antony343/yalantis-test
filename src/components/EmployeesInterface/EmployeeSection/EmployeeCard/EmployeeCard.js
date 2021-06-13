@@ -8,7 +8,7 @@ const EmployeeCard = (props) => {
       <span className={props.employee.isActive ? s.active : null}>
         {`${props.employee.lastName} ${props.employee.firstName}`}
       </span>
-      <RadioButtons employee={props.employee} toggleActiveStatus={props.toggleActiveStatus}/>
+      <RadioButtons employee={props.employee} toggleActiveStatus={props.toggleActiveStatus} retreiveActiveEmployees={props.retreiveActiveEmployees} />
     </div>
   );
 }
