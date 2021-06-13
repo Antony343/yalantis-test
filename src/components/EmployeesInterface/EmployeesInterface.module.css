@@ -1,0 +1,34 @@
+.sectionsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.employeesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.sectionTitle {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.activeSectionH2 {
+  border-bottom: 2px solid grey;
+  padding-bottom: 42px;
+  width: 50%;
+  text-align: center;
+  position: relative;
+}
+.activeSectionH2::before {
+  border-left: 2px solid grey;
+  height: 500px;
+  width: 1px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 90px;
+  left: -15px;
+}
